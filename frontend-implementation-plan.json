@@ -1,0 +1,23 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Remove footer attribution text",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Remove the second footer paragraph that renders the “Built with … using caffeine.ai” attribution from FooterSection.",
+      "acceptanceCriteria": [
+        "The footer no longer renders the second <p> element that contains the 'Built with … using caffeine.ai' attribution.",
+        "The footer still renders the social icon buttons and the copyright line unchanged.",
+        "No empty spacing or layout artifacts remain after removing the paragraph (overall footer spacing remains visually balanced)."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/sections/FooterSection.tsx",
+          "operation": "modify",
+          "description": "Delete only the JSX for the second <p> in the footer (the Caffeine.ai attribution line) corresponding to XPath /html[1]/body[1]/div[1]/div[1]/footer[1]/div[1]/div[1]/p[2], without changing social links/buttons or the copyright paragraph. Ensure no leftover empty wrapper/spacing artifacts remain."
+        }
+      ]
+    }
+  ]
+}

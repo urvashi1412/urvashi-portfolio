@@ -1,0 +1,23 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-17T10:24:05.138Z",
+  "summary": "REQ-1 appears implemented: FooterSection no longer renders a second <p> attribution line; social links and copyright remain. However, two additional files were modified that were not requested, which may violate the constraint to apply changes only to the selected footer paragraph element.",
+  "missing_requirements": [],
+  "hallucinated_features": [
+    {
+      "description": "Modified non-target files (project metadata / summaries) even though the request constrained changes to only the selected footer paragraph element.",
+      "reason": "BuildRequest constraint: \"Apply changes ONLY to the selected element identified by XPath ...\" but the diff includes modifications to additional files unrelated to removing the footer attribution paragraph.",
+      "evidence": [
+        "frontend-file-summaries.txt",
+        "project_state.json"
+      ]
+    }
+  ],
+  "confidence": 0.72,
+  "changed_files": [
+    "frontend-file-summaries.txt",
+    "frontend/src/components/sections/FooterSection.tsx",
+    "project_state.json"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "kind": "build_request",
+  "title": "Remove footer attribution text",
+  "projectName": "Portfolio",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Remove the text content corresponding to XPath /html[1]/body[1]/div[1]/div[1]/footer[1]/div[1]/div[1]/p[2] by deleting the second paragraph in the footer (the 'Built with … using caffeine.ai' attribution line) from the FooterSection component.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "remove the text",
+          "/html[1]/body[1]/div[1]/div[1]/footer[1]/div[1]/div[1]/p[2]"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The footer no longer renders the second <p> element that contains the 'Built with … using caffeine.ai' attribution.",
+        "The footer still renders the social icon buttons and the copyright line unchanged.",
+        "No empty spacing or layout artifacts remain after removing the paragraph (overall footer spacing remains visually balanced)."
+      ]
+    }
+  ],
+  "constraints": [
+    "Apply changes ONLY to the selected element identified by XPath /html[1]/body[1]/div[1]/div[1]/footer[1]/div[1]/div[1]/p[2].",
+    "Do not modify files under frontend/src/components/ui or any other immutable paths specified in SYSTEM_CONTEXT."
+  ],
+  "nonGoals": [
+    "Removing or changing any other text outside the selected footer paragraph.",
+    "Changing the footer social links, icons, or copyright content.",
+    "Adding GitHub Pages deployment tooling or documentation (not requested in this specific prompt)."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  },
+  "userProfileUpdate": {
+    "goalsToAdd": [],
+    "goalsToRemove": [],
+    "preferencesToAdd": [],
+    "preferencesToRemove": [],
+    "miscToAdd": [],
+    "miscToRemove": [],
+    "fieldsToSet": {},
+    "fieldsToDelete": []
+  }
+}

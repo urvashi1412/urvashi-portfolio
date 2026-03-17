@@ -1,0 +1,24 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-remove-the-text-content-corresponding-to-xpath-html-1-body-1-div-1-div-1-footer-1-div-1-div-1-p-2-by-deleting-the-second-paragraph-in-the-footer-the-built-with-using-caffeine-ai-attribution-line-from-the-footersection-component",
+      "featureTitle": "Remove the text content corresponding to XPath /html[1]/body[1]/div[1]/div[1]/footer[1]/div[1]/div[1]/p[2] by deleting the second paragraph in the footer (the 'Built with … using caffeine.ai' attribution line) from the FooterSection component.",
+      "files": [
+        "frontend/src/components/sections/FooterSection.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-1"
+      ],
+      "confidence": "high"
+    }
+  ]
+}
