@@ -9,8 +9,7 @@ export const portfolioConfig = {
   fullName: 'Urvashi Rathod',
   location: 'VIT Chennai',
 
-  // Resume file path (static asset)
-  resumePath: '/assets/resume.pdf',
+  // Resume file path (static asset)\n  resumePath: 'https://drive.google.com/uc?export=download&id=1tMsv0fSxoW83qs11huKn46YU3QIT8eqt',
 
   // Profile photo path (static asset)
   profilePhotoPath: '/assets/generated/profile-photo.dim_800x800.png',
